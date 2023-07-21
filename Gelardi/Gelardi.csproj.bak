@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E13A20A2-03B7-4C30-BAFA-7B73D04EA79B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gelardi</RootNamespace>
+    <AssemblyName>Gelardi</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>Gelardi.Program</StartupObject>
+    <ApplicationIcon>Resources\hondaIcono.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Clases\MSWord.cs" />
+    <Compile Include="Formularios\frContactos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frContactos.Designer.cs">
+      <DependentUpon>frContactos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frMain.Designer.cs">
+      <DependentUpon>frMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frOrder.Designer.cs">
+      <DependentUpon>frOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frStock.Designer.cs">
+      <DependentUpon>frStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GelardiDataSet.cs">
+      <DependentUpon>GelardiDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GelardiDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GelardiDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\consultaAutos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modulos\consultaAutos.Designer.cs">
+      <DependentUpon>consultaAutos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\consultaOrdenes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modulos\consultaOrdenes.Designer.cs">
+      <DependentUpon>consultaOrdenes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\consultaClientes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modulos\consultaClientes.Designer.cs">
+      <DependentUpon>consultaClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\controlDeuda.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modulos\controlDeuda.Designer.cs">
+      <DependentUpon>controlDeuda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\controlStock.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modulos\controlStock.Designer.cs">
+      <DependentUpon>controlStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\frAgenda.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modulos\frAgenda.Designer.cs">
+      <DependentUpon>frAgenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\garantias.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modulos\garantias.Designer.cs">
+      <DependentUpon>garantias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\importar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modulos\importar.Designer.cs">
+      <DependentUpon>importar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\nuevaOrdenServicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\nuevaOrdenServicio.Designer.cs">
+      <DependentUpon>nuevaOrdenServicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\turnos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modulos\turnos.Designer.cs">
+      <DependentUpon>turnos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\updateDB.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modulos\updateDB.Designer.cs">
+      <DependentUpon>updateDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings.cs" />
+    <EmbeddedResource Include="Formularios\frContactos.resx">
+      <DependentUpon>frContactos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frMain.resx">
+      <DependentUpon>frMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frOrder.resx">
+      <DependentUpon>frOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frStock.resx">
+      <DependentUpon>frStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\consultaAutos.resx">
+      <DependentUpon>consultaAutos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\consultaOrdenes.resx">
+      <DependentUpon>consultaOrdenes.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\consultaClientes.resx">
+      <DependentUpon>consultaClientes.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\controlDeuda.resx">
+      <DependentUpon>controlDeuda.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\controlStock.resx">
+      <DependentUpon>controlStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\frAgenda.resx">
+      <DependentUpon>frAgenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\garantias.resx">
+      <DependentUpon>garantias.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\importar.resx">
+      <DependentUpon>importar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\nuevaOrdenServicio.resx">
+      <DependentUpon>nuevaOrdenServicio.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\turnos.resx">
+      <DependentUpon>turnos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\updateDB.resx">
+      <DependentUpon>updateDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GelardiDataSet.xsc">
+      <DependentUpon>GelardiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GelardiDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GelardiDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GelardiDataSet.xss">
+      <DependentUpon>GelardiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\hondaIcono.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Address Book.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clipboard.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Download Database.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit file.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Padlock.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings File.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Cells">
+      <HintPath>Librerias\Aspose.Cells.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v17.1.Design, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v17.1.Reporting.Extensions, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v17.1.Design, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v17.1.Extensions, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>Librerias\Microsoft.Office.Interop.Word.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Vbe.Interop, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>Librerias\Microsoft.Vbe.Interop.dll</HintPath>
+    </Reference>
+    <Reference Include="office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>Librerias\office.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
